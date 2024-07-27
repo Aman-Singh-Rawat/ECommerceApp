@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="profile_image_size">66dp</dimen>
+    <dimen name="greetings_margin_start">10dp</dimen>
+    <dimen name="greetings_margin_top">5dp</dimen>
+    <dimen name="profile_img_margin_top">20dp</dimen>
+    <dimen name="profile_name_text_size">18sp</dimen>
+    <dimen name="views_width">0dp</dimen>
+    <dimen name="onboarding_text_size">33sp</dimen>
+    <dimen name="onboarding_text_view_margin_top">20dp</dimen>
+    <dimen name="onboarding_text_margin_start_end">17dp</dimen>
+
+    <dimen name="dot_indicator_corner_radius">8dp</dimen>
+    <dimen name="dot_indicator_spacing">4dp</dimen>
+    <dimen name="dot_indicator_dots_size">9dp</dimen>
+    <dimen name="dot_margin_bottom">20dp</dimen>
+
+    <dimen name="onboarding_margin_top">20dp</dimen>
+
+    <dimen name="onboarding_btn_text_size">16sp</dimen>
+    <dimen name="onboarding_btn_bg_corner_radius">20dp</dimen>
+    <dimen name="onboarding_btn_margin_bottom">20dp</dimen>
+    <dimen name="onboarding_btn_padding">12dp</dimen>
+
+    <dimen name="view_pager_margin_top">10dp</dimen>
+    <dimen name="view_pager_margin_bottom">20dp</dimen>
+
+    <!--    -->
+</resources>

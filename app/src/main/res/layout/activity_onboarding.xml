@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:fitsSystemWindows="true"
+    tools:context=".presenter.screen.activity.onboarding.OnboardingActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/glOnboardingActivityStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.05" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/glOnboardingActivityEnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.95" />
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/viewPager"
+            android:layout_width="@dimen/views_width"
+            android:layout_height="@dimen/views_width"
+            android:layout_marginTop="@dimen/view_pager_margin_top"
+            android:layout_marginBottom="@dimen/view_pager_margin_bottom"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/dotsIndicator"/>
+
+
+
+
+        <com.tbuonomo.viewpagerdotsindicator.DotsIndicator
+            android:id="@+id/dotsIndicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dot_margin_bottom"
+            app:dotsColor="@color/light_gray"
+            app:dotsCornerRadius="@dimen/dot_indicator_corner_radius"
+            app:dotsSize="@dimen/dot_indicator_dots_size"
+            app:dotsSpacing="@dimen/dot_indicator_spacing"
+            app:dotsWidthFactor="3.7"
+            app:layout_constraintBottom_toTopOf="@+id/btnNext"
+            app:layout_constraintEnd_toStartOf="@+id/glOnboardingActivityEnd"
+            app:layout_constraintStart_toStartOf="@+id/glOnboardingActivityStart"
+            app:progressMode="true"
+            app:selectedDotColor="@color/off_black" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnNext"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_btn_next"
+            android:fontFamily="@font/poppins_semibold"
+            android:letterSpacing="0.01"
+            android:text="@string/next"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/onboarding_btn_text_size"
+            android:padding="@dimen/onboarding_btn_padding"
+            android:layout_marginBottom="@dimen/onboarding_btn_margin_bottom"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/glOnboardingActivityEnd"
+            app:layout_constraintStart_toStartOf="@id/glOnboardingActivityStart" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

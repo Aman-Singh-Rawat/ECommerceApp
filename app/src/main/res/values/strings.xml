@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">E-Commerce App</string>
+    <string name="good_morning">Good Morning</string>
+    <string name="dummy_profile_name">Andrew Ainsley</string>
+    <string name="we_provide_high_quality_products_just_for_you">We provide high quality products just for you</string>
+    <string name="onboarding_viewpager_text_two">Your satisfaction is our number one priority</string>
+    <string name="onboarding_viewpager_text_three">Let\'s fulfill your daily needs with Evira right now!</string>
+    <string name="next">Next</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
