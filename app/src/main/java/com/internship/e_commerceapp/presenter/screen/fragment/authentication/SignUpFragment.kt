@@ -31,6 +31,9 @@ class SignUpFragment : Fragment() {
         binding.tvSignIn.setOnClickListener {
             findNavController().navigate(R.id.signInFragment)
         }
+        binding.imgBackPressed.setOnClickListener {
+            findNavController().navigateUp()
+        }
     }
 
     override fun onDestroyView() {

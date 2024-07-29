@@ -25,7 +25,7 @@
     <dimen name="view_pager_margin_top">10dp</dimen>
     <dimen name="view_pager_margin_bottom">20dp</dimen>
 
-    <dimen name="views_margin_top">30dp</dimen>
+    <dimen name="views_margin_top">25dp</dimen>
     <dimen name="welcome_image_margin_top">30dp</dimen>
 
                 <!--  fragment_welcome -->
@@ -48,8 +48,8 @@
 
                     <!--  fragment_sign_up  -->
 
-    <dimen name="create_your_account_margin_top">45dp</dimen>
-    <dimen name="tv_email_margin_top">40dp</dimen>
+    <dimen name="create_your_account_margin_top">35dp</dimen>
+    <dimen name="tv_email_margin_top">30dp</dimen>
     <dimen name="tv_password_margin_top">12dp</dimen>
     <dimen name="checkbox_margin_top">8dp</dimen>
     <dimen name="checkbox_padding">8dp</dimen>
@@ -62,4 +62,6 @@
     <dimen name="google_margin_start">18dp</dimen>
     <dimen name="create_your_account_et_radius">10dp</dimen>
 
+                    <!--  fragment_sign_in  -->
+    <dimen name="ll_continue_with_sign_in">50dp</dimen>
 </resources>

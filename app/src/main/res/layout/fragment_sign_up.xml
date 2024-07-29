@@ -4,9 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
     android:fillViewport="true"
-    android:fitsSystemWindows="true"
     tools:context=".presenter.screen.fragment.authentication.SignUpFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -31,9 +29,9 @@
             android:id="@+id/imgBackPressed"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/views_margin_top"
             android:clickable="true"
             android:focusable="true"
+            android:layout_marginTop="@dimen/views_margin_top"
             android:foreground="?attr/selectableItemBackground"
             android:src="@drawable/ic_arrow_back"
             app:layout_constraintStart_toEndOf="@id/glSignUpStart"

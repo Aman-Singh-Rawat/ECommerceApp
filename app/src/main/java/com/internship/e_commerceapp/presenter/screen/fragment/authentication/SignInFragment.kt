@@ -5,8 +5,10 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
 import com.internship.e_commerceapp.R
 import com.internship.e_commerceapp.databinding.FragmentSignInBinding
+import com.internship.e_commerceapp.presenter.screen.activity.authentication.AuthenticationActivity
 
 class SignInFragment : Fragment() {
     private var _binding: FragmentSignInBinding? = null
@@ -22,6 +24,14 @@ class SignInFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        initViews()
+    }
+
+    private fun initViews() {
+        binding.imgBackPressed.setOnClickListener {
+            (activity as AuthenticationActivity).onBackPressed()
+        }
 
     }
 
