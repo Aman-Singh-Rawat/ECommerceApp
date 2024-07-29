@@ -5,36 +5,30 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.navigation.fragment.findNavController
 import com.internship.e_commerceapp.R
-import com.internship.e_commerceapp.databinding.FragmentSignUpBinding
+import com.internship.e_commerceapp.databinding.FragmentSignInBinding
 
-class SignUpFragment : Fragment() {
-    private var _binding: FragmentSignUpBinding? = null
-    private val binding: FragmentSignUpBinding get() = _binding!!
+class SignInFragment : Fragment() {
+    private var _binding: FragmentSignInBinding? = null
+    private val binding: FragmentSignInBinding get() = _binding!!
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        _binding = FragmentSignUpBinding.inflate(inflater, container, false)
+        _binding = FragmentSignInBinding.inflate(inflater, container, false)
         return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        initViews()
-    }
-
-    private fun initViews() {
-        binding.tvSignIn.setOnClickListener {
-            findNavController().navigate(R.id.signInFragment)
-        }
     }
 
     override fun onDestroyView() {
         super.onDestroyView()
+
         _binding = null
     }
+
 }

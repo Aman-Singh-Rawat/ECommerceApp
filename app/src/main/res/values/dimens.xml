@@ -29,7 +29,7 @@
     <dimen name="welcome_image_margin_top">30dp</dimen>
 
                 <!--  fragment_welcome -->
-    <dimen name="lets_you_in_text_size">45sp</dimen>
+    <dimen name="lets_you_in_text_size">40sp</dimen>
     <dimen name="lets_you_in_text_margin_top">18dp</dimen>
     <dimen name="fragment_welcome_login_with_tv_radius">18dp</dimen>
     <dimen name="login_with_padding">16dp</dimen>
@@ -45,5 +45,21 @@
     <dimen name="don_have_an_account_margin_top">25dp</dimen>
     <dimen name="don_have_an_account_text_size">13sp</dimen>
     <dimen name="sign_up_text_margin_start">8dp</dimen>
+
+                    <!--  fragment_sign_up  -->
+
+    <dimen name="create_your_account_margin_top">45dp</dimen>
+    <dimen name="tv_email_margin_top">40dp</dimen>
+    <dimen name="tv_password_margin_top">12dp</dimen>
+    <dimen name="checkbox_margin_top">8dp</dimen>
+    <dimen name="checkbox_padding">8dp</dimen>
+    <dimen name="checkbox_text_size">15sp</dimen>
+    <dimen name="btn_sign_up_margin_top">8dp</dimen>
+    <dimen name="ll_continue_with">60dp</dimen>
+    <dimen name="mga_margin_top">30dp</dimen>
+    <dimen name="ll_already_have_an_account_margin_top">35dp</dimen>
+    <dimen name="social_media_height">60dp</dimen>
+    <dimen name="google_margin_start">18dp</dimen>
+    <dimen name="create_your_account_et_radius">10dp</dimen>
 
 </resources>

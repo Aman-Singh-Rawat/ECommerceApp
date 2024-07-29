@@ -15,4 +15,9 @@
         android:name="com.internship.e_commerceapp.presenter.screen.fragment.authentication.SignUpFragment"
         android:label="fragment_sign_up"
         tools:layout="@layout/fragment_sign_up" />
+    <fragment
+        android:id="@+id/signInFragment"
+        android:name="com.internship.e_commerceapp.presenter.screen.fragment.authentication.SignInFragment"
+        android:label="fragment_sign_in"
+        tools:layout="@layout/fragment_sign_in" />
 </navigation>
