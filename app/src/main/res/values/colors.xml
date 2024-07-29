@@ -3,6 +3,10 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="gray100">#7E7E7E</color>
+    <color name="off_black20">#222222</color>
     <color name="off_black">#101010</color>
     <color name="light_gray">#E0E0E0</color>
+    <color name="very_light_gray">#EFEFEF</color>
+    <color name="dark_gray">#5E5E5E</color>
+    <color name="medium_gray">#A0A0A0</color>
 </resources>

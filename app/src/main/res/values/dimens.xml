@@ -17,13 +17,33 @@
 
     <dimen name="onboarding_margin_top">20dp</dimen>
 
-    <dimen name="onboarding_btn_text_size">16sp</dimen>
-    <dimen name="onboarding_btn_bg_corner_radius">20dp</dimen>
+    <dimen name="onboarding_btn_text_size">15sp</dimen>
+    <dimen name="onboarding_btn_bg_corner_radius">28dp</dimen>
     <dimen name="onboarding_btn_margin_bottom">20dp</dimen>
-    <dimen name="onboarding_btn_padding">12dp</dimen>
+    <dimen name="onboarding_btn_padding">14dp</dimen>
 
     <dimen name="view_pager_margin_top">10dp</dimen>
     <dimen name="view_pager_margin_bottom">20dp</dimen>
 
-    <!--    -->
+    <dimen name="views_margin_top">30dp</dimen>
+    <dimen name="welcome_image_margin_top">30dp</dimen>
+
+                <!--  fragment_welcome -->
+    <dimen name="lets_you_in_text_size">45sp</dimen>
+    <dimen name="lets_you_in_text_margin_top">18dp</dimen>
+    <dimen name="fragment_welcome_login_with_tv_radius">18dp</dimen>
+    <dimen name="login_with_padding">16dp</dimen>
+    <dimen name="login_with_meta_margin_top">20dp</dimen>
+    <dimen name="login_with_margin_top">12dp</dimen>
+    <dimen name="login_with_text_size">15sp</dimen>
+    <dimen name="login_with_drawable_padding">14dp</dimen>
+    <dimen name="ll_or_margin_top">32dp</dimen>
+    <dimen name="or_text_size">16sp</dimen>
+    <dimen name="view_height">1dp</dimen>
+    <dimen name="or_text_margin_horizontal">16dp</dimen>
+    <dimen name="sign_in_with_margin_top">32dp</dimen>
+    <dimen name="don_have_an_account_margin_top">25dp</dimen>
+    <dimen name="don_have_an_account_text_size">13sp</dimen>
+    <dimen name="sign_up_text_margin_start">8dp</dimen>
+
 </resources>

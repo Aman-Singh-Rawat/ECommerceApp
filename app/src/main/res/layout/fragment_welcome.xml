@@ -1,16 +1,245 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true"
     tools:context=".presenter.screen.fragment.authentication.WelcomeFragment">
 
-    <androidx.appcompat.widget.AppCompatImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/img_back_arrow"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"/>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/glWelcomeStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.05" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/glWelcomeEnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.95" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgBackPressed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/img_back_arrow"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:layout_marginTop="@dimen/views_margin_top"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@id/glWelcomeStart" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgWelcome"
+            android:layout_width="@dimen/views_width"
+            android:layout_height="@dimen/views_width"
+            android:src="@drawable/ic_welcome"
+            app:layout_constraintDimensionRatio="16:9"
+            android:layout_marginTop="@dimen/welcome_image_margin_top"
+            app:layout_constraintEnd_toEndOf="@id/glWelcomeEnd"
+            app:layout_constraintTop_toBottomOf="@+id/imgBackPressed"
+            app:layout_constraintStart_toStartOf="@id/glWelcomeStart"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvLetYouIn"
+            android:layout_width="@dimen/views_width"
+            android:layout_height="wrap_content"
+            android:text="@string/let_s_you_in"
+            android:gravity="center"
+            android:textColor="@color/off_black"
+            android:fontFamily="@font/poppins_semibold"
+            android:layout_marginTop="@dimen/lets_you_in_text_margin_top"
+            android:textSize="@dimen/lets_you_in_text_size"
+            app:layout_constraintTop_toBottomOf="@id/imgWelcome"
+            app:layout_constraintEnd_toEndOf="@id/glWelcomeEnd"
+            app:layout_constraintStart_toStartOf="@id/glWelcomeStart"/>
+
+        <LinearLayout
+            android:id="@+id/llContinueWithMeta"
+            android:layout_width="@dimen/views_width"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/login_with_padding"
+            android:layout_marginTop="@dimen/login_with_meta_margin_top"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:background="@drawable/bg_login_with_tv"
+            app:layout_constraintTop_toBottomOf="@id/tvLetYouIn"
+            app:layout_constraintEnd_toEndOf="@id/glWelcomeEnd"
+            app:layout_constraintStart_toStartOf="@id/glWelcomeStart">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_meta"
+                android:drawablePadding="@dimen/login_with_drawable_padding"
+                android:fontFamily="@font/poppins_semibold"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:letterSpacing="0.02"
+                android:text="@string/continue_with_meta"
+                android:textAlignment="center"
+                android:textColor="@color/off_black20"
+                android:textSize="@dimen/login_with_text_size" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llContinueWithGoogle"
+            android:layout_width="@dimen/views_width"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/login_with_padding"
+            android:layout_marginTop="@dimen/login_with_margin_top"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:background="@drawable/bg_login_with_tv"
+            app:layout_constraintTop_toBottomOf="@id/llContinueWithMeta"
+            app:layout_constraintEnd_toEndOf="@id/glWelcomeEnd"
+            app:layout_constraintStart_toStartOf="@id/glWelcomeStart">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_google"
+                android:drawablePadding="@dimen/login_with_drawable_padding"
+                android:fontFamily="@font/poppins_semibold"
+                android:gravity="center"
+                android:letterSpacing="0.02"
+                android:text="@string/continue_with_google"
+                android:textAlignment="center"
+                android:textColor="@color/off_black20"
+                android:includeFontPadding="false"
+                android:textSize="@dimen/login_with_text_size" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llContinueWithApple"
+            android:layout_width="@dimen/views_width"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/login_with_padding"
+            android:layout_marginTop="@dimen/login_with_margin_top"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:background="@drawable/bg_login_with_tv"
+            app:layout_constraintTop_toBottomOf="@id/llContinueWithGoogle"
+            app:layout_constraintEnd_toEndOf="@id/glWelcomeEnd"
+            app:layout_constraintStart_toStartOf="@id/glWelcomeStart">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_apple"
+                android:drawablePadding="@dimen/login_with_drawable_padding"
+                android:fontFamily="@font/poppins_semibold"
+                android:gravity="center"
+                android:letterSpacing="0.02"
+                android:text="@string/continue_with_apple"
+                android:textAlignment="center"
+                android:textColor="@color/off_black20"
+                android:includeFontPadding="false"
+                android:textSize="@dimen/login_with_text_size" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llOr"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/ll_or_margin_top"
+            app:layout_constraintEnd_toEndOf="@id/glWelcomeEnd"
+            app:layout_constraintStart_toStartOf="@id/glWelcomeStart"
+            app:layout_constraintTop_toBottomOf="@id/llContinueWithApple">
+
+            <View
+                android:layout_width="@dimen/views_width"
+                android:layout_height="@dimen/view_height"
+                android:layout_weight="1"
+                android:background="@color/very_light_gray"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/or"
+                android:textSize="@dimen/or_text_size"
+                android:includeFontPadding="false"
+                android:fontFamily="@font/poppins_semibold"
+                android:textColor="@color/dark_gray"
+                android:layout_marginHorizontal="@dimen/or_text_margin_horizontal"/>
+
+            <View
+                android:layout_width="@dimen/views_width"
+                android:layout_height="@dimen/view_height"
+                android:layout_weight="1"
+                android:background="@color/very_light_gray"/>
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnSignInWithPassword"
+            android:layout_width="@dimen/views_width"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_btn_next"
+            android:fontFamily="@font/poppins_semibold"
+            android:letterSpacing="0.01"
+            android:text="@string/sign_in_with_password"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/onboarding_btn_text_size"
+            android:padding="@dimen/onboarding_btn_padding"
+            android:layout_marginBottom="@dimen/onboarding_btn_margin_bottom"
+            android:layout_marginTop="@dimen/sign_in_with_margin_top"
+            app:layout_constraintTop_toBottomOf="@id/llOr"
+            app:layout_constraintEnd_toEndOf="@id/glWelcomeEnd"
+            app:layout_constraintStart_toStartOf="@id/glWelcomeStart"/>
+
+        <LinearLayout
+            android:layout_width="@dimen/views_width"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/don_have_an_account_margin_top"
+            app:layout_constraintEnd_toEndOf="@id/glWelcomeEnd"
+            app:layout_constraintStart_toStartOf="@id/glWelcomeStart"
+            app:layout_constraintTop_toBottomOf="@id/btnSignInWithPassword">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/medium_gray"
+                android:textSize="@dimen/don_have_an_account_text_size"
+                android:fontFamily="@font/poppins"
+                android:text="@string/don_t_have_an_account" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvSignUp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sign_up"
+                android:textColor="@color/off_black"
+                android:fontFamily="@font/poppins_semibold"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"
+                android:layout_marginStart="@dimen/sign_up_text_margin_start"/>
+
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>

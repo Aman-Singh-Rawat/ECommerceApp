@@ -64,7 +64,6 @@ class OnboardingActivity : AppCompatActivity() {
                                 Intent(this@OnboardingActivity,
                                 AuthenticationActivity::class.java)
                             )
-                            finish()
                         }
                     }
                 }
