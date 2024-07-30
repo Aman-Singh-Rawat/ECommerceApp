@@ -30,4 +30,9 @@
         android:name="com.internship.e_commerceapp.presenter.screen.fragment.resetpassword.ForgotPassOtpFragment"
         android:label="fragment_forgot_pass_otp"
         tools:layout="@layout/fragment_forgot_pass_otp" />
+    <fragment
+        android:id="@+id/createNewPassFragment"
+        android:name="com.internship.e_commerceapp.presenter.screen.fragment.resetpassword.CreateNewPassFragment"
+        android:label="fragment_create_new_pass"
+        tools:layout="@layout/fragment_create_new_pass" />
 </navigation>
