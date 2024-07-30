@@ -88,4 +88,9 @@
     <dimen name="et_otp_view_margin_top">40dp</dimen>
     <dimen name="resend_code_margin_top">50dp</dimen>
     <dimen name="resend_code_text_size">15sp</dimen>
+
+                <!--  fragment_create_new_pass    -->
+    <dimen name="create_new_pass_img_margin_top">65dp</dimen>
+    <dimen name="create_your_new_pass_tv_margin_top">60dp</dimen>
+    <dimen name="tv_pass_margin_top">20dp</dimen>
 </resources>

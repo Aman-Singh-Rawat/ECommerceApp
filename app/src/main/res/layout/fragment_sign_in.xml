@@ -99,8 +99,6 @@
             app:layout_constraintStart_toStartOf="@id/glSignInStart"
             app:layout_constraintTop_toBottomOf="@id/tvEmail">
 
-            <!--    TODO CHECKBOX DESIGN    -->
-
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/etPassword"
                 android:layout_width="match_parent"
@@ -118,6 +116,8 @@
 
         </com.google.android.material.textfield.TextInputLayout>
 
+        <!--    TODO CHECKBOX DESIGN    -->
+
         <androidx.appcompat.widget.AppCompatCheckBox
             android:id="@+id/checkbox"
             android:layout_width="wrap_content"
@@ -130,7 +130,7 @@
             android:includeFontPadding="false"
             android:textAlignment="center"
             android:textColor="@color/off_black"
-            android:fontFamily="@font/poppins_medium"
+            android:fontFamily="@font/poppins_semibold"
             app:layout_constraintTop_toBottomOf="@id/tvPassword"
             app:layout_constraintEnd_toEndOf="@id/glSignInEnd"
             app:layout_constraintStart_toStartOf="@id/glSignInStart"/>
