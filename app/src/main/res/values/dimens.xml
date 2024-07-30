@@ -25,7 +25,7 @@
     <dimen name="view_pager_margin_top">10dp</dimen>
     <dimen name="view_pager_margin_bottom">20dp</dimen>
 
-    <dimen name="views_margin_top">25dp</dimen>
+    <dimen name="views_margin_top">30dp</dimen>
     <dimen name="welcome_image_margin_top">30dp</dimen>
 
                 <!--  fragment_welcome -->
@@ -64,4 +64,21 @@
 
                     <!--  fragment_sign_in  -->
     <dimen name="ll_continue_with_sign_in">50dp</dimen>
+
+                    <!--  fragment_forgot_password  -->
+    <dimen name="forgot_password_tv_size">17sp</dimen>
+    <dimen name="forgot_password_margin_start">15dp</dimen>
+    <dimen name="via_with_margin_bottom_top">6dp</dimen>
+    <dimen name="vai_sms_text_size">13sp</dimen>
+    <dimen name="via_margin_start">16dp</dimen>
+    <dimen name="via_with_img_size">30dp</dimen>
+    <dimen name="vai_with_fl_size">80dp</dimen>
+    <dimen name="cl_via_sms_margin_top">19dp</dimen>
+    <dimen name="cl_via_email_margin_top">19dp</dimen>
+    <dimen name="cl_via_padding">20dp</dimen>
+    <dimen name="select_which_margin_top">24dp</dimen>
+    <dimen name="select_which_text_size">15sp</dimen>
+    <dimen name="bg_forgot_pass_sms_corner_radius">20dp</dimen>
+    <dimen name="bg_forgot_pass_sms_stroke_selected_width">2dp</dimen>
+    <dimen name="bg_forgot_pass_sms_stroke_not_selected_width">1dp</dimen>
 </resources>

@@ -32,7 +32,9 @@ class SignInFragment : Fragment() {
         binding.imgBackPressed.setOnClickListener {
             (activity as AuthenticationActivity).onBackPressed()
         }
-
+        binding.tvForgetThePassword.setOnClickListener {
+            findNavController().navigate(R.id.forgotPasswordFragment)
+        }
     }
 
     override fun onDestroyView() {

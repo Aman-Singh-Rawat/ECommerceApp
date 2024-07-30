@@ -20,4 +20,14 @@
         android:name="com.internship.e_commerceapp.presenter.screen.fragment.authentication.SignInFragment"
         android:label="fragment_sign_in"
         tools:layout="@layout/fragment_sign_in" />
+    <fragment
+        android:id="@+id/forgotPasswordFragment"
+        android:name="com.internship.e_commerceapp.presenter.screen.fragment.resetpassword.ForgotPasswordFragment"
+        android:label="fragment_forgot_password"
+        tools:layout="@layout/fragment_forgot_password" />
+    <fragment
+        android:id="@+id/forgotPassOtpFragment"
+        android:name="com.internship.e_commerceapp.presenter.screen.fragment.resetpassword.ForgotPassOtpFragment"
+        android:label="fragment_forgot_pass_otp"
+        tools:layout="@layout/fragment_forgot_pass_otp" />
 </navigation>
