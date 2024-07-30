@@ -54,4 +54,7 @@ dependencies {
     implementation("de.hdodenhof:circleimageview:3.1.0")
     //dots indicator
     implementation("com.tbuonomo:dotsindicator:5.0")
+
+    //Otp View Dependency
+    implementation("com.github.ozcanalasalvar:otpview:2.0.1")
 }

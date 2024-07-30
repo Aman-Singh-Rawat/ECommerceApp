@@ -32,4 +32,7 @@
     <string name="and_ley_your_domain_com">and***ley@yourdomain.com</string>
     <string name="via_email">via Email:</string>
     <string name="_continue">Continue</string>
+    <string name="code_has_been_send_to_1_111_99">Code has been send to +1 111 ******99</string>
+    <string name="resend_code_in_55_s">Resend code in 55 s</string>
+    <string name="verify">verify</string>
 </resources>

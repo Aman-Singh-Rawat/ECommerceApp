@@ -1,14 +1,124 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:fillViewport="true"
     tools:context=".presenter.screen.fragment.resetpassword.ForgotPassOtpFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="0dp">
 
-</FrameLayout>
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/glForgotPassOtpStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.05" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/glForgotPassOtpEnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.95" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgBackPressed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/views_margin_top"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:src="@drawable/ic_arrow_back"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@id/glForgotPassOtpStart"/>
+
+           <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/forgot_password_margin_start"
+            android:fontFamily="@font/poppins_semibold"
+            android:includeFontPadding="false"
+            android:text="@string/forgot_password"
+            android:textColor="@color/off_black"
+            android:textSize="@dimen/forgot_password_tv_size"
+            app:layout_constraintBottom_toBottomOf="@id/imgBackPressed"
+            app:layout_constraintStart_toEndOf="@id/imgBackPressed"
+            app:layout_constraintTop_toTopOf="@id/imgBackPressed" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvCodeHasBeen"
+            android:layout_width="@dimen/views_width"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:textColor="@color/off_black"
+            android:gravity="center"
+            android:textSize="@dimen/select_which_text_size"
+            android:layout_marginTop="@dimen/tv_code_has_been_send_margin_top"
+            android:text="@string/code_has_been_send_to_1_111_99"
+            app:layout_constraintTop_toBottomOf="@id/imgBackPressed"
+            app:layout_constraintEnd_toEndOf="@id/glForgotPassOtpEnd"
+            app:layout_constraintStart_toEndOf="@id/glForgotPassOtpStart"/>
+
+        <com.ozcanalasalvar.otp_view.view.OtpView
+            android:id="@+id/otpView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:activeColor="@color/white"
+            app:autoFocusEnabled="false"
+            app:digits="4"
+            app:textColor="@color/off_black"
+            app:fontFamily="@font/poppins_medium"
+            app:layout_constraintEnd_toStartOf="@+id/glForgotPassOtpEnd"
+            app:layout_constraintStart_toStartOf="@+id/glForgotPassOtpStart"
+            app:layout_constraintTop_toBottomOf="@+id/tvCodeHasBeen"
+            app:textSize="22"
+            android:layout_marginTop="@dimen/et_otp_view_margin_top"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvResendCode"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/off_black20"
+            android:letterSpacing="0.01"
+            android:textSize="@dimen/resend_code_text_size"
+            app:fontFamily="@font/poppins_medium"
+            android:layout_marginTop="@dimen/resend_code_margin_top"
+            android:text="@string/resend_code_in_55_s"
+            app:layout_constraintTop_toBottomOf="@id/otpView"
+            app:layout_constraintEnd_toEndOf="@id/glForgotPassOtpEnd"
+            app:layout_constraintStart_toStartOf="@id/glForgotPassOtpStart"/>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/glForgotPassOtpEnd"
+            app:layout_constraintStart_toStartOf="@id/glForgotPassOtpStart"
+            app:layout_constraintTop_toBottomOf="@id/tvResendCode">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnContinue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_btn_next"
+                android:fontFamily="@font/poppins_semibold"
+                android:letterSpacing="0.01"
+                android:text="@string/verify"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/onboarding_btn_text_size"
+                android:padding="@dimen/onboarding_btn_padding"
+                android:layout_marginBottom="@dimen/onboarding_btn_margin_bottom"
+                android:layout_marginTop="@dimen/btn_sign_up_margin_top"
+                android:layout_gravity="bottom"/>
+
+        </FrameLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

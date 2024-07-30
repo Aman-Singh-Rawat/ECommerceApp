@@ -81,4 +81,11 @@
     <dimen name="bg_forgot_pass_sms_corner_radius">20dp</dimen>
     <dimen name="bg_forgot_pass_sms_stroke_selected_width">2dp</dimen>
     <dimen name="bg_forgot_pass_sms_stroke_not_selected_width">1dp</dimen>
+
+
+                    <!-- fragment_forgot_pass_otp   -->
+    <dimen name="tv_code_has_been_send_margin_top">100dp</dimen>
+    <dimen name="et_otp_view_margin_top">40dp</dimen>
+    <dimen name="resend_code_margin_top">50dp</dimen>
+    <dimen name="resend_code_text_size">15sp</dimen>
 </resources>
