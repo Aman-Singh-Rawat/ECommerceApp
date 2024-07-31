@@ -7,7 +7,27 @@
 
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.internship.e_commerceapp.presenter.screen.fragment.HomeFragment"
+        android:name="com.internship.e_commerceapp.presenter.screen.fragment.home.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/cartFragment"
+        android:name="com.internship.e_commerceapp.presenter.screen.fragment.cart.CartFragment"
+        android:label="fragment_cart"
+        tools:layout="@layout/fragment_cart" />
+    <fragment
+        android:id="@+id/ordersFragment"
+        android:name="com.internship.e_commerceapp.presenter.screen.fragment.orders.OrdersFragment"
+        android:label="fragment_orders"
+        tools:layout="@layout/fragment_orders" />
+    <fragment
+        android:id="@+id/walletFragment"
+        android:name="com.internship.e_commerceapp.presenter.screen.fragment.wallet.WalletFragment"
+        android:label="fragment_wallet"
+        tools:layout="@layout/fragment_wallet" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.internship.e_commerceapp.presenter.screen.fragment.profile.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
 </navigation>

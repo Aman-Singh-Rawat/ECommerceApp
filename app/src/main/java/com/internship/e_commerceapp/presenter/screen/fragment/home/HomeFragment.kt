@@ -1,4 +1,4 @@
-package com.internship.e_commerceapp.presenter.screen.fragment
+package com.internship.e_commerceapp.presenter.screen.fragment.home
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
