@@ -23,6 +23,7 @@ class CreateNewPassFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.btnContinue.setOnClickListener {
+            dialogFragment.isCancelable = false
             dialogFragment.show(parentFragmentManager, "dialogFragment")
         }
 
