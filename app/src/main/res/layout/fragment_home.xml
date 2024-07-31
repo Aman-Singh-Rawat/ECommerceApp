@@ -30,7 +30,7 @@
             android:layout_width="@dimen/profile_image_size"
             android:layout_height="@dimen/profile_image_size"
             android:src="@drawable/img_dummy_profile"
-            android:layout_marginTop="@dimen/profile_img_margin_top"
+            android:layout_marginTop="@dimen/views_margin_top"
             app:layout_constraintStart_toEndOf="@id/glMainActivityStart"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -39,8 +39,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/good_morning"
+            android:textColor="@color/gray100"
             app:fontFamily="@font/poppins"
-            android:layout_marginTop="@dimen/greetings_margin_top"
+            android:includeFontPadding="false"
+            android:layout_marginTop="@dimen/greetings_name_margin_top_bottom"
             android:layout_marginStart="@dimen/greetings_margin_start"
             app:layout_constraintStart_toEndOf="@id/imgProfile"
             app:layout_constraintTop_toTopOf="@id/imgProfile" />
@@ -51,9 +53,11 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/greetings_margin_start"
             android:text="@string/dummy_profile_name"
-            android:textColor="@color/black"
+            android:textColor="@color/off_black"
             android:letterSpacing="0.01"
             android:textSize="@dimen/profile_name_text_size"
+            android:layout_marginBottom="@dimen/greetings_name_margin_top_bottom"
+            android:includeFontPadding="false"
             app:fontFamily="@font/poppins_semibold"
             app:layout_constraintBottom_toBottomOf="@+id/imgProfile"
             app:layout_constraintStart_toEndOf="@id/imgProfile"
@@ -73,10 +77,11 @@
             android:id="@+id/img_bell"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/img_heart"
-            app:layout_constraintTop_toTopOf="@id/tvGreetingMsg"
-            app:layout_constraintBottom_toBottomOf="@id/tvUserName"
-            app:layout_constraintEnd_toEndOf="@id/glMainActivityEnd"/>
+            android:src="@drawable/img_bell"
+            android:layout_marginEnd="@dimen/img_bell_margin_end"
+            app:layout_constraintTop_toTopOf="@id/imgHeart"
+            app:layout_constraintBottom_toBottomOf="@id/imgHeart"
+            app:layout_constraintEnd_toStartOf="@id/imgHeart"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

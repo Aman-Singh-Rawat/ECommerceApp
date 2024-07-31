@@ -1,4 +1,4 @@
-package com.internship.e_commerceapp.presenter.screen.activity
+package com.internship.e_commerceapp.presenter.screen.activity.home
 
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
@@ -7,11 +7,8 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.core.view.isVisible
 import androidx.navigation.NavController
-import androidx.navigation.NavDestination
 import androidx.navigation.fragment.NavHostFragment
-import androidx.navigation.fragment.findNavController
 import androidx.navigation.ui.NavigationUI.setupWithNavController
-import androidx.navigation.ui.setupActionBarWithNavController
 import com.internship.e_commerceapp.R
 import com.internship.e_commerceapp.databinding.ActivityMainBinding
 

@@ -25,7 +25,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".presenter.screen.activity.MainActivity"
+            android:name=".presenter.screen.activity.home.MainActivity"
             android:exported="true" />
 
         <meta-data

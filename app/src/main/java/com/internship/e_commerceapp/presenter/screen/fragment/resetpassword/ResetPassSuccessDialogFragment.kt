@@ -12,7 +12,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.DialogFragment
 import com.internship.e_commerceapp.R
-import com.internship.e_commerceapp.presenter.screen.activity.MainActivity
+import com.internship.e_commerceapp.presenter.screen.activity.home.MainActivity
 import com.internship.e_commerceapp.presenter.screen.activity.authentication.AuthenticationActivity
 
 class ResetPassSuccessDialogFragment : DialogFragment() {
