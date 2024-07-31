@@ -35,4 +35,9 @@
         android:name="com.internship.e_commerceapp.presenter.screen.fragment.resetpassword.CreateNewPassFragment"
         android:label="fragment_create_new_pass"
         tools:layout="@layout/fragment_create_new_pass" />
+    <fragment
+        android:id="@+id/resetPassSuccessDialogFragment"
+        android:name="com.internship.e_commerceapp.presenter.screen.fragment.resetpassword.ResetPassSuccessDialogFragment"
+        android:label="fragment_reset_pass_success_dialog"
+        tools:layout="@layout/fragment_reset_pass_success_dialog" />
 </navigation>

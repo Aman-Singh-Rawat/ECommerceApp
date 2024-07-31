@@ -93,4 +93,36 @@
     <dimen name="create_new_pass_img_margin_top">65dp</dimen>
     <dimen name="create_your_new_pass_tv_margin_top">60dp</dimen>
     <dimen name="tv_pass_margin_top">20dp</dimen>
+
+                <!-- fragment_reset_pass_success_dialog   -->
+    <dimen name="reset_pass_card_view_width">350dp</dimen>
+    <dimen name="reset_pass_card_view_height">520dp</dimen>
+    <dimen name="reset_pass_card_corner_radius">20dp</dimen>
+    <dimen name="reset_pass_card_elevation">10dp</dimen>
+    <dimen name="reset_pass_constraint_padding_top">20dp</dimen>
+    <dimen name="fl_congratulation_width_height">150dp</dimen>
+    <dimen name="fl_congratulation_margin_top">50dp</dimen>
+    <dimen name="view_width_height">20dp</dimen>
+    <dimen name="view_margin_end">5dp</dimen>
+    <dimen name="view2_width_height">3dp</dimen>
+    <dimen name="view2_margin_top">35dp</dimen>
+    <dimen name="view3_width_height">15dp</dimen>
+    <dimen name="view3_margin_top">35dp</dimen>
+    <dimen name="view3_margin_start">10dp</dimen>
+    <dimen name="view4_width_height">8dp</dimen>
+    <dimen name="view4_margin_top">30dp</dimen>
+    <dimen name="view5_width_height">5dp</dimen>
+    <dimen name="view5_margin_top">20dp</dimen>
+    <dimen name="view5_margin_start">30dp</dimen>
+    <dimen name="view6_width_height">10dp</dimen>
+    <dimen name="view6_margin_start">50dp</dimen>
+    <dimen name="view7_width_height">8dp</dimen>
+    <dimen name="view7_margin_start">10dp</dimen>
+    <dimen name="view7_margin_bottom">50dp</dimen>
+    <dimen name="view8_width_height">16dp</dimen>
+    <dimen name="view9_width_height">8dp</dimen>
+    <dimen name="tv_congratulation_text_size">20sp</dimen>
+    <dimen name="tv_congratulation_margin_top">30sp</dimen>
+    <dimen name="tv_your_account_margin_top">12dp</dimen>
+    <dimen name="progress_bar_margin_top">25dp</dimen>
 </resources>

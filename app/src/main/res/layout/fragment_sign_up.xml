@@ -131,7 +131,7 @@
             android:includeFontPadding="false"
             android:textAlignment="center"
             android:textColor="@color/off_black"
-            android:fontFamily="@font/poppins_medium"
+            android:fontFamily="@font/poppins_semibold"
             app:layout_constraintTop_toBottomOf="@id/tvPassword"
             app:layout_constraintEnd_toEndOf="@id/glSignUpEnd"
             app:layout_constraintStart_toStartOf="@id/glSignUpStart"/>

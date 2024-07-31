@@ -38,4 +38,6 @@
     <string name="create_new_password">Create New Password</string>
     <string name="create_your_new_password">Create Your New Password</string>
     <string name="confirm_password">Confirm Password</string>
+    <string name="congratulations">Congratulations!</string>
+    <string name="your_account_is_ready">Your account is ready to use. You will be redirected to the Home page in a\nfew seconds.</string>
 </resources>
