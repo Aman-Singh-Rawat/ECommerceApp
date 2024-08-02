@@ -81,7 +81,7 @@
 
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tvResendCode"
-            android:layout_width="0dp"
+            android:layout_width="@dimen/views_width"
             android:layout_height="wrap_content"
             android:gravity="center"
             android:textColor="@color/off_black20"
@@ -95,7 +95,7 @@
             app:layout_constraintStart_toStartOf="@id/glForgotPassOtpStart"/>
 
         <FrameLayout
-            android:layout_width="0dp"
+            android:layout_width="@dimen/views_width"
             android:layout_height="0dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="@id/glForgotPassOtpEnd"
@@ -114,7 +114,7 @@
                 android:textColor="@color/white"
                 android:textSize="@dimen/onboarding_btn_text_size"
                 android:padding="@dimen/onboarding_btn_padding"
-                android:layout_marginBottom="@dimen/onboarding_btn_margin_bottom"
+                android:layout_marginBottom="@dimen/continue_btn_margin_bottom"
                 android:layout_marginTop="@dimen/btn_sign_up_margin_top"
                 android:layout_gravity="bottom"/>
 

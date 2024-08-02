@@ -40,4 +40,7 @@
     <string name="confirm_password">Confirm Password</string>
     <string name="congratulations">Congratulations!</string>
     <string name="your_account_is_ready">Your account is ready to use. You will be redirected to the Home page in a\nfew seconds.</string>
+    <string name="the_best_e_commerce_app_">The best e-commerce app of the century for your daily needs!</string>
+    <string name="welcome_to">Welcome to 👋</string>
+    <string name="evira">Evira</string>
 </resources>

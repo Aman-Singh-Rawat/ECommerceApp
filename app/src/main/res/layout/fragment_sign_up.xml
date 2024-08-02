@@ -148,7 +148,7 @@
             android:textColor="@color/white"
             android:textSize="@dimen/onboarding_btn_text_size"
             android:padding="@dimen/onboarding_btn_padding"
-            android:layout_marginBottom="@dimen/onboarding_btn_margin_bottom"
+            android:layout_marginBottom="@dimen/continue_btn_margin_bottom"
             android:layout_marginTop="@dimen/btn_sign_up_margin_top"
             app:layout_constraintTop_toBottomOf="@id/checkbox"
             app:layout_constraintEnd_toEndOf="@id/glSignUpEnd"
@@ -192,7 +192,7 @@
             android:id="@+id/llSocialMedia"
             android:layout_width="@dimen/views_width"
             android:layout_height="wrap_content"
-            android:paddingHorizontal="30dp"
+            android:paddingHorizontal="@dimen/ll_social_media_padding_horizontal"
             android:layout_marginTop="@dimen/mga_margin_top"
             app:layout_constraintTop_toBottomOf="@id/llOrContinueWith"
             app:layout_constraintEnd_toEndOf="@id/glSignUpEnd"
@@ -220,7 +220,7 @@
                 android:foreground="?attr/selectableItemBackground"/>
 
             <androidx.appcompat.widget.AppCompatImageButton
-                android:layout_width="0dp"
+                android:layout_width="@dimen/views_width"
                 android:layout_height="@dimen/social_media_height"
                 android:layout_marginStart="@dimen/google_margin_start"
                 android:layout_weight="1"

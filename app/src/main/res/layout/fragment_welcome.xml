@@ -39,10 +39,9 @@
 
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/imgWelcome"
-            android:layout_width="@dimen/views_width"
-            android:layout_height="@dimen/views_width"
+            android:layout_width="@dimen/fragment_welcome_img_width_height"
+            android:layout_height="@dimen/fragment_welcome_img_width_height"
             android:src="@drawable/ic_welcome"
-            app:layout_constraintDimensionRatio="16:9"
             android:layout_marginTop="@dimen/welcome_image_margin_top"
             app:layout_constraintEnd_toEndOf="@id/glWelcomeEnd"
             app:layout_constraintTop_toBottomOf="@+id/imgBackPressed"
@@ -157,7 +156,7 @@
 
         <LinearLayout
             android:id="@+id/llOr"
-            android:layout_width="0dp"
+            android:layout_width="@dimen/views_width"
             android:layout_height="wrap_content"
             android:gravity="center"
             android:layout_marginTop="@dimen/ll_or_margin_top"
@@ -201,7 +200,7 @@
             android:textColor="@color/white"
             android:textSize="@dimen/onboarding_btn_text_size"
             android:padding="@dimen/onboarding_btn_padding"
-            android:layout_marginBottom="@dimen/onboarding_btn_margin_bottom"
+            android:layout_marginBottom="@dimen/continue_btn_margin_bottom"
             android:layout_marginTop="@dimen/sign_in_with_margin_top"
             app:layout_constraintTop_toBottomOf="@id/llOr"
             app:layout_constraintEnd_toEndOf="@id/glWelcomeEnd"

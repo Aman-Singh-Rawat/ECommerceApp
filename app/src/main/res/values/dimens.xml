@@ -1,12 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+                <!--  activity_splash_screen  -->
+
+    <dimen name="image_view_width">140dp</dimen>
+    <dimen name="image_view_height">120dp</dimen>
+    <dimen name="progress_bar_margin_bottom">24dp</dimen>
+    <dimen name="tv_welcome_text_size">42sp</dimen>
+    <dimen name="tv_app_name_text_size">80sp</dimen>
+    <dimen name="bg_welcome_screen_img_radius">5dp</dimen>
+    <dimen name="tv_app_description_margin_bottom">30sp</dimen>
+    <dimen name="tv_forgot_password_margin_top">20dp</dimen>
+    <dimen name="ll_social_media_padding_horizontal">30dp</dimen>
+
+
     <dimen name="profile_image_size">60dp</dimen>
     <dimen name="greetings_margin_start">12dp</dimen>
     <dimen name="greetings_name_margin_top_bottom">4dp</dimen>
     <dimen name="profile_img_margin_top">20dp</dimen>
     <dimen name="profile_name_text_size">18sp</dimen>
     <dimen name="views_width">0dp</dimen>
-    <dimen name="onboarding_text_size">33sp</dimen>
+    <dimen name="onboarding_text_size">28sp</dimen>
     <dimen name="onboarding_text_view_margin_top">20dp</dimen>
     <dimen name="onboarding_text_margin_start_end">17dp</dimen>
 
@@ -19,14 +32,15 @@
 
     <dimen name="onboarding_btn_text_size">15sp</dimen>
     <dimen name="onboarding_btn_bg_corner_radius">28dp</dimen>
-    <dimen name="onboarding_btn_margin_bottom">20dp</dimen>
+    <dimen name="continue_btn_margin_bottom">20dp</dimen>
+    <dimen name="onboarding_btn_margin_bottom">40dp</dimen>
     <dimen name="onboarding_btn_padding">14dp</dimen>
 
     <dimen name="view_pager_margin_top">10dp</dimen>
     <dimen name="view_pager_margin_bottom">20dp</dimen>
 
     <dimen name="views_margin_top">30dp</dimen>
-    <dimen name="welcome_image_margin_top">30dp</dimen>
+    <dimen name="welcome_image_margin_top">20dp</dimen>
 
                 <!--  fragment_welcome -->
     <dimen name="lets_you_in_text_size">40sp</dimen>
@@ -45,7 +59,7 @@
     <dimen name="don_have_an_account_margin_top">25dp</dimen>
     <dimen name="don_have_an_account_text_size">13sp</dimen>
     <dimen name="sign_up_text_margin_start">8dp</dimen>
-
+    <dimen name="fragment_welcome_img_width_height">210dp</dimen>
                     <!--  fragment_sign_up  -->
 
     <dimen name="create_your_account_margin_top">35dp</dimen>
