@@ -35,6 +35,10 @@ class SignInFragment : Fragment() {
         binding.tvForgetThePassword.setOnClickListener {
             findNavController().navigate(R.id.forgotPasswordFragment)
         }
+
+        binding.btnSignIn.setOnClickListener {
+            findNavController().navigate(R.id.fillProfileFragment)
+        }
     }
 
     override fun onDestroyView() {
@@ -42,5 +46,4 @@ class SignInFragment : Fragment() {
 
         _binding = null
     }
-
 }

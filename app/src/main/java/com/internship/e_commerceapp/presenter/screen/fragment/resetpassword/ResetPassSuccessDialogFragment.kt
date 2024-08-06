@@ -10,19 +10,25 @@ import android.os.Looper
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import androidx.fragment.app.DialogFragment
 import com.internship.e_commerceapp.R
+import com.internship.e_commerceapp.databinding.FragmentResetPassSuccessDialogBinding
 import com.internship.e_commerceapp.presenter.screen.activity.home.MainActivity
 import com.internship.e_commerceapp.presenter.screen.activity.authentication.AuthenticationActivity
+import com.internship.e_commerceapp.util.Constant
 
 class ResetPassSuccessDialogFragment : DialogFragment() {
+    private val fragment: String by lazy { arguments?.getString(Constant.DIALOG_FRAGMENT) ?: "" }
+    private var _binding: FragmentResetPassSuccessDialogBinding? = null
+    private val binding get() = _binding!!
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_reset_pass_success_dialog, container, false)
+    ): View {
+        _binding = FragmentResetPassSuccessDialogBinding.inflate(inflater, container, false)
+        return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -33,6 +39,12 @@ class ResetPassSuccessDialogFragment : DialogFragment() {
     }
 
     private fun initViews() {
+        if (fragment == Constant.FILL_PROFILE) {
+            binding.imgCongratulation.setImageResource(R.drawable.ic_profile_signin)
+        } else {
+            binding.imgCongratulation.setImageResource(R.drawable.img_shield)
+        }
+
         Handler(Looper.getMainLooper()).postDelayed({
             val intent = Intent(
                 requireContext(),
@@ -49,5 +61,11 @@ class ResetPassSuccessDialogFragment : DialogFragment() {
         val dialog = super.onCreateDialog(savedInstanceState)
         dialog.window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
         return dialog
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+
+        _binding = null
     }
 }

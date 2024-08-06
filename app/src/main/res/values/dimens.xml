@@ -142,4 +142,11 @@
 
             <!-- fragment_home.xml   -->
     <dimen name="img_bell_margin_end">22dp</dimen>
+
+            <!-- fragment_home.xml   -->
+    <dimen name="civ_fragment_fill_profile_width_height">120dp</dimen>
+    <dimen name="civ_fragment_fill_profile_margin_top">30dp</dimen>
+    <dimen name="iv_change_image_width_height">40dp</dimen>
+    <dimen name="iv_change_image_margin_bottom">10dp</dimen>
+    <dimen name="fl_btn_continue_margin_top">30dp</dimen>
 </resources>

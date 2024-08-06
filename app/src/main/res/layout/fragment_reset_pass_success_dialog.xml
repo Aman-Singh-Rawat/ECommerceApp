@@ -51,6 +51,7 @@
 
                         <!--    TODO CHANGING THIS IMAGE FROM HERE     -->
                 <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imgCongratulation"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"

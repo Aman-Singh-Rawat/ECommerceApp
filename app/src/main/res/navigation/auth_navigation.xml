@@ -40,4 +40,9 @@
         android:name="com.internship.e_commerceapp.presenter.screen.fragment.resetpassword.ResetPassSuccessDialogFragment"
         android:label="fragment_reset_pass_success_dialog"
         tools:layout="@layout/fragment_reset_pass_success_dialog" />
+    <fragment
+        android:id="@+id/fillProfileFragment"
+        android:name="com.internship.e_commerceapp.presenter.screen.fragment.account.FillProfileFragment"
+        android:label="fragment_fill_profile"
+        tools:layout="@layout/fragment_fill_profile" />
 </navigation>

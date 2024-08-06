@@ -15,4 +15,8 @@ object Constant {
                 context.resources.getString(R.string.onboarding_viewpager_text_three))
         )
     }
+
+    /* Keys */
+    const val DIALOG_FRAGMENT = "dialog_fragment"
+    const val FILL_PROFILE = "fill_profile"
 }
