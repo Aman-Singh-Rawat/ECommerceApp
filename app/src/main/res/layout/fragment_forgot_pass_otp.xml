@@ -79,6 +79,7 @@
             app:textSize="22"
             android:layout_marginTop="@dimen/et_otp_view_margin_top"/>
 
+            <!--   TODO FIX THE OTP -->
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tvResendCode"
             android:layout_width="@dimen/views_width"

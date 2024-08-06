@@ -11,4 +11,6 @@
     <color name="medium_gray">#A0A0A0</color>
     <color name="off_white">#FAFAFA</color>
     <color name="gray">#F5F5F7</color>
+    <color name="gray20">#F5F5F5</color>
+    <color name="gray40">#E7E7E7</color>
 </resources>

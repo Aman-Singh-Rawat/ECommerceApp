@@ -13,7 +13,7 @@
     <dimen name="ll_social_media_padding_horizontal">30dp</dimen>
 
 
-    <dimen name="profile_image_size">60dp</dimen>
+    <dimen name="profile_image_size">55dp</dimen>
     <dimen name="greetings_margin_start">12dp</dimen>
     <dimen name="greetings_name_margin_top_bottom">4dp</dimen>
     <dimen name="profile_img_margin_top">20dp</dimen>
@@ -80,7 +80,7 @@
     <dimen name="ll_continue_with_sign_in">50dp</dimen>
 
                     <!--  fragment_forgot_password  -->
-    <dimen name="forgot_password_tv_size">17sp</dimen>
+    <dimen name="forgot_password_tv_size">19sp</dimen>
     <dimen name="forgot_password_margin_start">15dp</dimen>
     <dimen name="via_with_margin_bottom_top">6dp</dimen>
     <dimen name="vai_sms_text_size">13sp</dimen>
@@ -149,4 +149,25 @@
     <dimen name="iv_change_image_width_height">40dp</dimen>
     <dimen name="iv_change_image_margin_bottom">10dp</dimen>
     <dimen name="fl_btn_continue_margin_top">30dp</dimen>
+    <dimen name="ll_search_filter_margin_top">20dp</dimen>
+    <dimen name="fragment_home_search_end_margin">20dp</dimen>
+    <dimen name="ib_filter_padding">20dp</dimen>
+
+            <!--     fragment_notification.xml   -->
+    <dimen name="rv_notification_parent_margin_top">20dp</dimen>
+
+            <!--     fragment_notification.xml   -->
+    <dimen name="notification_child_item_card_corner_radius">14dp</dimen>
+    <dimen name="notification_child_cv_padding">10dp</dimen>
+    <dimen name="notification_child_card_view_width_height">65dp</dimen>
+    <dimen name="notification_child_card_corner_radius">65dp</dimen>
+    <dimen name="tv_notification_title_margin_start">20dp</dimen>
+    <dimen name="tv_notification_description_text_size">12sp</dimen>
+
+    <!--     fragment_notification_parent_item.xml   -->
+    <dimen name="tv_notification_time_text_size">16sp</dimen>
+    <dimen name="rv_notification_child_margin_top">8sp</dimen>
+
+<!--        search_view_theme-->
+    <dimen name="search_view_theme_tv">14sp</dimen>
 </resources>

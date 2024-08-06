@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="SearchViewTheme" parent="Widget.AppCompat.SearchView">
+        <item name="android:textColorHint">@color/gray100</item>
+<!--        <item name="android:editTextColor">@color/grey</item>-->
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="iconifiedByDefault">false</item>
+        <item name="android:hint">Search</item>
+        <item name="android:textSize">@dimen/search_view_theme_tv</item>
+        <item name="queryBackground">@drawable/bg_create_your_account_et</item>
+        <item name="android:searchIcon">@drawable/ic_search</item>
+    </style>
+</resources>

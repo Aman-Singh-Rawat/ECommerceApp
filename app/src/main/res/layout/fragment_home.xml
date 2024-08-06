@@ -74,14 +74,56 @@
             app:layout_constraintEnd_toEndOf="@id/glMainActivityEnd"/>
 
         <androidx.appcompat.widget.AppCompatImageView
-            android:id="@+id/img_bell"
+            android:id="@+id/imgBell"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:focusable="true"
             android:src="@drawable/img_bell"
             android:layout_marginEnd="@dimen/img_bell_margin_end"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackground"
             app:layout_constraintTop_toTopOf="@id/imgHeart"
             app:layout_constraintBottom_toBottomOf="@id/imgHeart"
             app:layout_constraintEnd_toStartOf="@id/imgHeart"/>
+
+        <LinearLayout
+            android:id="@+id/llSearchFilter"
+            android:layout_width="@dimen/views_width"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ll_search_filter_margin_top"
+            android:background="@drawable/bg_create_your_account_et"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="@id/glMainActivityEnd"
+            app:layout_constraintStart_toStartOf="@id/glMainActivityStart"
+            app:layout_constraintTop_toBottomOf="@+id/imgProfile">
+
+            <androidx.appcompat.widget.SearchView
+                android:id="@+id/searchIcon"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/fragment_home_search_end_margin"
+                android:layout_weight="1"
+                android:background="@drawable/bg_create_your_account_et"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:theme="@style/SearchViewTheme"
+                app:queryBackground="@drawable/bg_create_your_account_et"
+                app:queryHint="Search"
+                app:searchIcon="@drawable/ic_search" />
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/ibFilter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:focusable="true"
+                android:padding="@dimen/ib_filter_padding"
+                android:clickable="true"
+                android:src="@drawable/img_filter"
+                android:foreground="?attr/selectableItemBackground"/>
+
+        </LinearLayout>
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

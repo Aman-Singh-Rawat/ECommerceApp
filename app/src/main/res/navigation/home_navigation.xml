@@ -30,4 +30,9 @@
         android:name="com.internship.e_commerceapp.presenter.screen.fragment.profile.ProfileFragment"
         android:label="fragment_profile"
         tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/notificationFragment"
+        android:name="com.internship.e_commerceapp.presenter.screen.fragment.home.NotificationFragment"
+        android:label="fragment_notification"
+        tools:layout="@layout/fragment_notification" />
 </navigation>

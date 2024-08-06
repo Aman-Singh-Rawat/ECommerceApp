@@ -37,7 +37,7 @@
             android:exported="false" />
         <activity
             android:name=".presenter.screen.activity.home.MainActivity"
-            android:exported="true" />
+            android:exported="false" />
 
         <meta-data
             android:name="preloaded_fonts"

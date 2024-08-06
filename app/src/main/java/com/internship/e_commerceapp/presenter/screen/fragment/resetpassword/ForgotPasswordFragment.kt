@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import com.internship.e_commerceapp.R
 import com.internship.e_commerceapp.databinding.FragmentForgotPasswordBinding
+import com.internship.e_commerceapp.presenter.screen.activity.authentication.AuthenticationActivity
 
 class ForgotPasswordFragment : Fragment() {
     private var _binding: FragmentForgotPasswordBinding? = null
@@ -28,20 +29,22 @@ class ForgotPasswordFragment : Fragment() {
     }
 
     private fun initViews() {
-        binding.clViaSms.isSelected = true
-
-        binding.clViaSms.setOnClickListener {
-            binding.clViaEmail.isSelected = false
-            binding.clViaSms.isSelected = true
-        }
-
-        binding.clViaEmail.setOnClickListener {
-            binding.clViaSms.isSelected = false
-            binding.clViaEmail.isSelected = true
-        }
-
-        binding.btnContinue.setOnClickListener {
-            findNavController().navigate(R.id.forgotPassOtpFragment)
+        binding.apply {
+            clViaSms.isSelected = true
+            clViaSms.setOnClickListener { // here adding corner functionality
+                clViaEmail.isSelected = false
+                clViaSms.isSelected = true
+            }
+            clViaEmail.setOnClickListener { // here adding corner functionality
+                clViaSms.isSelected = false
+                clViaEmail.isSelected = true
+            }
+            btnContinue.setOnClickListener {
+                findNavController().navigate(R.id.forgotPassOtpFragment)
+            }
+            imgBackPressed.setOnClickListener {
+                (activity as AuthenticationActivity).onBackPressed() //Adding BackPressed here
+            }
         }
     }
 
