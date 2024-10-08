@@ -50,4 +50,6 @@
     <string name="phone_number">Phone Number</string>
     <string name="gender">Gender</string>
     <string name="notification">Notification</string>
+    <string name="special_offers">Special Offers</string>
+    <string name="see_all">See All</string>
 </resources>

@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
     android:fillViewport="true"
     tools:context=".presenter.screen.fragment.home.HomeFragment">
 
@@ -29,8 +30,8 @@
             android:id="@+id/imgProfile"
             android:layout_width="@dimen/profile_image_size"
             android:layout_height="@dimen/profile_image_size"
-            android:src="@drawable/img_dummy_profile"
             android:layout_marginTop="@dimen/views_margin_top"
+            android:src="@drawable/img_dummy_profile"
             app:layout_constraintStart_toEndOf="@id/glMainActivityStart"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -38,12 +39,12 @@
             android:id="@+id/tvGreetingMsg"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/greetings_margin_start"
+            android:layout_marginTop="@dimen/greetings_name_margin_top_bottom"
+            android:includeFontPadding="false"
             android:text="@string/good_morning"
             android:textColor="@color/gray100"
             app:fontFamily="@font/poppins"
-            android:includeFontPadding="false"
-            android:layout_marginTop="@dimen/greetings_name_margin_top_bottom"
-            android:layout_marginStart="@dimen/greetings_margin_start"
             app:layout_constraintStart_toEndOf="@id/imgProfile"
             app:layout_constraintTop_toTopOf="@id/imgProfile" />
 
@@ -52,12 +53,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/greetings_margin_start"
-            android:text="@string/dummy_profile_name"
-            android:textColor="@color/off_black"
-            android:letterSpacing="0.01"
-            android:textSize="@dimen/profile_name_text_size"
             android:layout_marginBottom="@dimen/greetings_name_margin_top_bottom"
             android:includeFontPadding="false"
+            android:letterSpacing="0.01"
+            android:text="@string/dummy_profile_name"
+            android:textColor="@color/off_black"
+            android:textSize="@dimen/profile_name_text_size"
             app:fontFamily="@font/poppins_semibold"
             app:layout_constraintBottom_toBottomOf="@+id/imgProfile"
             app:layout_constraintStart_toEndOf="@id/imgProfile"
@@ -69,22 +70,22 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/img_heart"
-            app:layout_constraintTop_toTopOf="@id/tvGreetingMsg"
             app:layout_constraintBottom_toBottomOf="@id/tvUserName"
-            app:layout_constraintEnd_toEndOf="@id/glMainActivityEnd"/>
+            app:layout_constraintEnd_toEndOf="@id/glMainActivityEnd"
+            app:layout_constraintTop_toTopOf="@id/tvGreetingMsg" />
 
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/imgBell"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:focusable="true"
-            android:src="@drawable/img_bell"
             android:layout_marginEnd="@dimen/img_bell_margin_end"
             android:clickable="true"
+            android:focusable="true"
             android:foreground="?attr/selectableItemBackground"
-            app:layout_constraintTop_toTopOf="@id/imgHeart"
+            android:src="@drawable/img_bell"
             app:layout_constraintBottom_toBottomOf="@id/imgHeart"
-            app:layout_constraintEnd_toStartOf="@id/imgHeart"/>
+            app:layout_constraintEnd_toStartOf="@id/imgHeart"
+            app:layout_constraintTop_toTopOf="@id/imgHeart" />
 
         <LinearLayout
             android:id="@+id/llSearchFilter"
@@ -116,13 +117,37 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@null"
-                android:focusable="true"
-                android:padding="@dimen/ib_filter_padding"
                 android:clickable="true"
-                android:src="@drawable/img_filter"
-                android:foreground="?attr/selectableItemBackground"/>
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"
+                android:padding="@dimen/ib_filter_padding"
+                android:src="@drawable/img_filter" />
 
         </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvOffer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="@string/special_offers"
+            android:textColor="@color/black"
+            android:textSize="18.sp"
+            app:layout_constraintStart_toStartOf="@id/glMainActivityStart"
+            app:layout_constraintTop_toBottomOf="@+id/llSearchFilter" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvSellAll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_bold"
+            android:text="@string/see_all"
+            android:textColor="@color/black"
+            android:textSize="18.sp"
+            app:layout_constraintBottom_toBottomOf="@id/tvOffer"
+            app:layout_constraintEnd_toEndOf="@+id/glMainActivityEnd"
+            app:layout_constraintTop_toTopOf="@id/tvOffer" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
